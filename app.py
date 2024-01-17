@@ -65,7 +65,9 @@ def with_pd():
 prompt = [
     """
     You are an expert in converting questions to SQL query!
-    The SQL database has the name STUDENT and has the following columns - NAME, CLASS and MARKS, 
+    The SQL database has the name STUDENT and has the following columns - NAME VARCHAR(25),SURNAME VARCHAR(25), FACULTY VARCHAR(255), DEPARTMENT VARCHAR(25), CLASS VARCHAR(25), STUDENTID VARCHAR(255),
+    COURSE VARCHAR(255), LECTURER VARCHAR(255), EMAIL VARCHAR(255), PHONENUMBER VARCHAR(255), MARK INT, 
+    example data ('Sema', 'Öztürk', 'Sağlık Bilimleri Fakültesi', 'Fizyoterapi', '3', '584619237', 'Fizyoterapi Teknikleri', 'Prof. Atalay', 'sema@example.com', '789-456-1230', 88),
     SECTION \n\nFor example,\nExample 1 - How many entries of records are present?, 
     the SQL command will be something like this SELECT COUNT(*) FROM STUDENT ;
     \nExample 2 - Tell me all the students studying in Data Science class?, 
