@@ -85,9 +85,9 @@ prompt = [
         SET NAME = 'Cabbar'
         WHERE NAME = 'Krish'
         RETURNING *;,
-        As you saw in the expamle mainly you are gonna generate one proper query accordig to given multiple queries
-        Double check the queries and make sure its a proper query for our db and SQL standarts
-       also the sql code SHOULD NOT have ``` in beginning or end and sql word in output, ONLY THE SQL proper query
+        As you saw in the expamle mainly you are gonna generate one proper query according to given multiple queries or for any other error state you will rewrite the query
+        Double check the queries and make sure its a proper query for our db and SQL standarts, (Especially SQLlite standarts)
+        Also the sql code SHOULD NOT have ``` in beginning or end and sql word in output, ONLY THE PROPER SQL query nothing else
 
     """
 
