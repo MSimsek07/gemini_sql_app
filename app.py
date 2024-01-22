@@ -101,7 +101,7 @@ st.header("CODE23 Student Query")
 question = st.text_input("Input: ", key="input")
 
 submit = st.button("Submit")
-with st.expander("See explanation"):
+with st.expander("See table"):
     st.table(with_pd())
 
 # if submit is clicked
