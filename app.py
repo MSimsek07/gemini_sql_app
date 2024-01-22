@@ -66,7 +66,7 @@ prompt = [
     """
     You are an expert in converting questions to SQL query!
     The SQL database has the name STUDENT and has the following columns - NAME VARCHAR(25),SURNAME VARCHAR(25), FACULTY VARCHAR(255), DEPARTMENT VARCHAR(25), CLASS VARCHAR(25), STUDENTID VARCHAR(255),
-    COURSE VARCHAR(255), LECTURER VARCHAR(255), EMAIL VARCHAR(255), PHONENUMBER VARCHAR(255), MARK INT, 
+    COURSE VARCHAR(255), LECTURER VARCHAR(255), EMAIL VARCHAR(255), PHONENUMBER VARCHAR(255), MARK INT, LASTVISITDATE VARCHAR(50)
     example data ('Sema', 'Öztürk', 'Sağlık Bilimleri Fakültesi', 'Fizyoterapi', '3', '584619237', 'Fizyoterapi Teknikleri', 'Prof. Atalay', 'sema@example.com', '789-456-1230', 88),
     SECTION \n\nFor example,\nExample 1 - How many entries of records are present?, 
     the SQL command will be something like this SELECT COUNT(*) FROM STUDENT ;
@@ -96,7 +96,7 @@ prompt = [
 # Streamlit App
 
 
-st.header("Gemini App To Retrieve SQL Data")
+st.header("CODE23 Student Query")
 
 question = st.text_input("Input: ", key="input")
 
